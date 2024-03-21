@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import Header from './Header';
 
 const Login = () => {
-    
+
     return (
+<<<<<<< HEAD
       <>
         <Header />
         <main>
@@ -37,6 +38,37 @@ const Login = () => {
                 </a>
               </li>
             </ul>
+=======
+        <div className="container">
+            <Header />
+            <main>
+                <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                    <li className="nav-item" role="presentation">
+                        <a
+                            className="nav-link active"
+                            id="tab-login"
+                            data-mdb-toggle="pill"
+                            href="#pills-login"
+                            role="tab"
+                            aria-controls="pills-login"
+                            aria-selected="true">
+                            Login
+                        </a>
+                    </li>
+                    <li className="nav-item" role="presentation">
+                        <a
+                            className="nav-link"
+                            id="tab-register"
+                            data-mdb-toggle="pill"
+                            href="#pills-register"
+                            role="tab"
+                            aria-controls="pills-register"
+                            aria-selected="false">
+                            Register
+                        </a>
+                    </li>
+                </ul>
+>>>>>>> fe061ea6e898dee21c9def4bb550c6aeb7a1c7f9
 
             <div className="tab-content">
               <div
@@ -116,6 +148,7 @@ const Login = () => {
                     <div className="col-md-6 d-flex justify-content-center">
                       <a href="#!">Forgot password?</a>
                     </div>
+<<<<<<< HEAD
                   </div>
 
                   <button
@@ -247,6 +280,11 @@ const Login = () => {
           </div>
         </main>
       </>
+=======
+                </div>
+            </main>
+        </div>
+>>>>>>> fe061ea6e898dee21c9def4bb550c6aeb7a1c7f9
     );
 }
 
