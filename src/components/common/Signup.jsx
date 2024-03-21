@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from './Header';
 
 const Signup = () => {
   return (
     <>
+      <Header/>
       <div className="col-md-8 order-md-1">
         <h4 className="mb-3">Inscrivez vous </h4>
 
