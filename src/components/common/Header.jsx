@@ -1,6 +1,6 @@
 import { FaUser } from "react-icons/fa"
 import { Link } from "react-router-dom"
-import CartButton from "../Buttons/CartButton"
+import CartButton from "../buttons/CartButton"
 
 const Header = () => {
   return (
