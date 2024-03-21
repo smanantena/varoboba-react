@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../../components/common/Header'
 import CardItemFilActu from '../../components/cards/CardItemFilActu/CardItemFilActu'
-
+import './Home.css'
 
 const Home = () => {
     return (
@@ -10,7 +10,16 @@ const Home = () => {
             <section>
                 <div className="container">
                     <h2>Publications de ventes</h2>
-                    <div className="row">
+                    <div className="cards-container">
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
+                        <CardItemFilActu/>
                         <CardItemFilActu/>
                     </div>
                 </div>
