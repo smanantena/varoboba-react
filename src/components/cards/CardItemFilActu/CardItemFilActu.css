@@ -1,11 +1,16 @@
 .card-item-mini {
     max-width: 250px;
     min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    justify-content: space-between;
+
 }
 
 .card-item-mini-image {
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .card-item-mini-image img {
@@ -17,4 +22,28 @@
 .card-item-mini-body {
     text-align: left;
     padding: .5rem 0;
+}
+
+.card-item-price {
+    font-weight: 700;
+}
+
+.card-item-owner-container {
+    max-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem .3rem;
+}
+
+.card-item-owner-container {
+    display: flex;
+    gap: .5rem;
+    justify-content: flex-start;
+}
+
+.card-item-owner-container img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50px;
 }
