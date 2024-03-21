@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import Header from './Header';
 
 const Login = () => {
-    
+
     return (
-        <>
+        <div className="container">
             <Header />
             <main>
                 <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
@@ -205,7 +205,7 @@ const Login = () => {
                     </div>
                 </div>
             </main>
-        </>
+        </div>
     );
 }
 
