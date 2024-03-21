@@ -2,12 +2,7 @@ import React, { useState } from 'react'
 import Header from './Header';
 
 const Login = () => {
-    const [checkedCheckbox, setCheckedCheckbox] = useState(false)
-
-
-    const handleChangeCheckbox = (e) => {
-
-    }
+    
     return (
         <>
             <Header />
@@ -196,7 +191,6 @@ const Login = () => {
                                     type="checkbox"
                                     value=""
                                     id="registerCheck"
-                                    checked
                                     aria-describedby="registerCheckHelpText"
                                 />
                                 <label className="form-check-label" htmlFor="registerCheck">
