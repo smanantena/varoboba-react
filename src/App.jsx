@@ -17,6 +17,7 @@ import Admin from './components/Admin/Admin'
 
 function App() {
   const [products, setProducts] = useState([])
+  const [ cart, setCart ] = useState([])
 
   const fetchData = async () => {
     try {
@@ -37,9 +38,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home products={products} />} />
+        <Route path="/" element={<Home products={products} cart={cart} setCart={setCart} setProducts={setProducts} />} />
         <Route path="/sign-in" element={<Login />} />
-        <Route path="/sign-up" element={<Signup />} />
+       {/* <Route path="/sign-up" element={<Signup />} /> */}
         <Route path="*" element={<NotFound />} />
         <Route path="/ListClient" element={<ListClient />} />
         <Route path="/ProduitClient" element={<ProduitClient />} />

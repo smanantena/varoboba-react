@@ -1,9 +1,10 @@
+import React from "react";
 import { FaUser } from "react-icons/fa"
 import { Link } from "react-router-dom"
 import CartButton from '../buttons/CartButton';
 
 
-const Header = () => {
+const Header = ({cart}) => {
   return (
     <header>
       <div className="container">
@@ -20,7 +21,7 @@ const Header = () => {
             <Link className="btn btn-light" to="/sign-in">
               Sign in
             </Link>
-            <Link to="/cart"><CartButton/> </Link>
+            <Link to="/cart"><CartButton cart={cart} /> </Link>
           </div>
         </nav>
       </div>

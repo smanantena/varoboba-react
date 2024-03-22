@@ -1,9 +1,9 @@
 import { FaShoppingCart } from "react-icons/fa";
 
-const CartButton = () => {
+const CartButton = ({cart}) => {
   return (
     <button className="cart-button btn btn-dark d-flex align-items-center gap-1">
-      <FaShoppingCart /> Komandy • 0
+      <FaShoppingCart /> • {cart.length ? cart.length : 0}
     </button>
   );
 };

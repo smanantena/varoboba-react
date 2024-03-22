@@ -1,9 +1,9 @@
-import Header from "./Header";
+// import Header from "./Header";
 
 const Signup = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className="container w-50">
         <div className="col-md-8 order-md-1">
           <h4 className="mb-3">Inscrivez vous </h4>

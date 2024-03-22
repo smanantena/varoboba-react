@@ -4,19 +4,19 @@ import CardItemFilActu from '../../components/cards/CardItemFilActu/CardItemFilA
 import './Home.css'
 import axios from 'axios'
 
-const Home = ({ products }) => {
+function Home  ({ products, cart, setCart, setProducts })  {
     
 
     return (
         <main>
-            <Header />
+            <Header cart={cart} />
             <section>
                 <div className="container">
                     <h2>Publications de ventes</h2>
                     <div className="cards-container">
                         {
                             products.map(
-                                product => <CardItemFilActu key={product.id} product={product} />
+                                product => <CardItemFilActu key={product.id} product={product} setCart={setCart} setProducts={setProducts} />
                             )
                         }
                     </div>
