@@ -1,7 +1,36 @@
-import React from 'react'
 import Header from './Header';
+import React, { useState } from 'react'
+import './Inscription.css';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Signup = () => {
+  const navigate = useNavigate();
+  
+
+  const [userField, setUserField] = useState({
+    name: "",
+    email: "",
+    Password: ""
+  });
+  const changeUserFieldHandler = (e) => {
+    
+    setUserField({
+      ...userField,
+      [ e.target.name ]: e.target.value
+    });
+    console.log(userField); 
+  }
+  const onSubmitChange = async (e) => {
+    e.preventDefault();
+    try {
+      const responce = await axios.post("http://localhost:8000/api/addnew", userField);
+      console.log(responce);
+      navigate("/Login");
+
+    } catch (err) {
+      console.log("something Wrong");
+    }
   return (
     <>
       <Header />
@@ -20,6 +49,7 @@ const Signup = () => {
                   name="name"
                   placeholder=""
                   required=""
+                   onChange={(e) => changeUserFieldHandler(e)}
                 />
               </div>
               <div className="col-md-6 mb-3">
@@ -30,6 +60,7 @@ const Signup = () => {
                   id="prenom"
                   placeholder=""
                   required=""
+                   onChange={(e) => changeUserFieldHandler(e)}
                 />
               </div>
             </div>
@@ -43,6 +74,7 @@ const Signup = () => {
                 className="form-control"
                 id="email"
                 placeholder="you@example.com"
+                 onChange={(e) => changeUserFieldHandler(e)}
               />
               <div className="invalid-feedback">
                 Please enter a valid email address for shipping updates.
@@ -57,6 +89,7 @@ const Signup = () => {
                 id="address"
                 placeholder="..., Antananarivo, Madagascar"
                 required=""
+                 onChange={(e) => changeUserFieldHandler(e)}
               />
               <div className="invalid-feedback">
                 Please enter your shipping address.
@@ -106,7 +139,8 @@ const Signup = () => {
             </div>
             <hr className="mb-4" />
 
-            <button className="btn btn-dark btn-lg btn-block" type="submit">
+            <button className="btn btn-dark btn-lg btn-block"
+            onClick={(e) => onSubmitChange(e)}  type="submit">
               s'enregistrer
             </button>
           </form>
