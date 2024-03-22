@@ -13,6 +13,7 @@ import Postuler from './components/Client/Postuler'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Home from './pages/visitors/Home'
+import Admin from './components/Admin/Admin'
 
 function App() {
   const [products, setProducts] = useState([])
@@ -40,15 +41,15 @@ function App() {
         <Route path="/sign-in" element={<Login />} />
         <Route path="/sign-up" element={<Signup />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/admin" element={<Dashboard />} />
         <Route path="/ListClient" element={<ListClient />} />
-        <Route path="/ProduitClient" element={<ProduitClient/>} />
-        <Route path="/client" element={<Client/>} />
-        <Route path="/Postuler" element={<Postuler/>} />
         <Route path="/ProduitClient" element={<ProduitClient />} />
+        <Route path="/client" element={<Client />} />
+        <Route path="/Postuler" element={<Postuler />} />
+        <Route path="/ProduitClient" element={<ProduitClient />} />
+        <Route path="/admin" element={<Admin/>} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App
