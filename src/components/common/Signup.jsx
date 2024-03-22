@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 import Header from './Header';
 import React, { useState } from 'react'
 import './Inscription.css';
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+=======
+import Header from "./Header";
+>>>>>>> 17b2299687b173db49e23950e9517063f6e6b37e
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -41,24 +45,24 @@ const Signup = () => {
           <form action="" className="needs-validation">
             <div className="row">
               <div className="col-md-6 mb-3">
-                <label for="firstName">Nom </label>
+                <label htmlFor="name">Nom </label>
                 <input
-                  type="text"
-                  className="form-control"
+                 type='text'
+                className="form-control"
                   id="name"
                   name="name"
-                  placeholder=""
+                  
                   required=""
                    onChange={(e) => changeUserFieldHandler(e)}
                 />
               </div>
               <div className="col-md-6 mb-3">
-                <label for="lastName">Prenom</label>
+                <label htmlFor="lastName">Prenom</label>
                 <input
                   type="text"
                   className="form-control"
                   id="prenom"
-                  placeholder=""
+                  
                   required=""
                    onChange={(e) => changeUserFieldHandler(e)}
                 />
@@ -66,7 +70,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-3">
-              <label for="email">
+              <label htmlFor="email">
                 E-mail <span className="text-muted"> (facultatif) </span>
               </label>
               <input
@@ -82,7 +86,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-3">
-              <label for="address">Adresse </label>
+              <label htmlFor="address">Adresse </label>
               <input
                 type="text"
                 className="form-control"
@@ -97,7 +101,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-3">
-              <label for="address2">
+              <label htmlFor="address2">
                 Mot de passe <span className="text-muted"> </span>
               </label>
               <input
@@ -110,7 +114,7 @@ const Signup = () => {
 
             <div className="row">
               <div className="col-md-5 mb-3">
-                <label for="country">Pays </label>
+                <label htmlFor="country">Pays </label>
                 <select
                   className="custom-select d-block w-100"
                   id="country"
@@ -123,7 +127,7 @@ const Signup = () => {
                 </div>
               </div>
               <div className="col-md-4 mb-3">
-                <label for="state">Sexe </label>
+                <label htmlFor="state">Sexe </label>
                 <select
                   className="custom-select d-block w-100"
                   id="state"
@@ -139,8 +143,12 @@ const Signup = () => {
             </div>
             <hr className="mb-4" />
 
+<<<<<<< HEAD
             <button className="btn btn-dark btn-lg btn-block"
             onClick={(e) => onSubmitChange(e)}  type="submit">
+=======
+            <button className="btn btn-primary btn-lg btn-block" type="submit">
+>>>>>>> 17b2299687b173db49e23950e9517063f6e6b37e
               s'enregistrer
             </button>
           </form>
