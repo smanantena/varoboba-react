@@ -1,16 +1,15 @@
-import React from 'react'
-import Header from '../common/Header'
-import ListClient from './ListClient'
+import React from "react";
+import Header from "../common/Header";
+import ListClient from "./ListClient";
 
 function Admin() {
   return (
     <>
-          <Header />
-          <ListClient />
-          <Produit />
-          
+      <Header />
+      <ListClient />
+      {/* <Produit /> */}
     </>
   );
 }
 
-export default Admin
+export default Admin;
