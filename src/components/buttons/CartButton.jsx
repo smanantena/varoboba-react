@@ -1,5 +1,4 @@
 import { FaShoppingCart } from "react-icons/fa";
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 const CartButton = () => {
   return (

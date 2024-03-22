@@ -9,6 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Dashboard from './components/Admin/Dashboard'
 
 function App() {
+  const [ products, setProducts ] = useState([])
+
+  
 
   return (
     <BrowserRouter>
