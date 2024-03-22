@@ -1,6 +1,7 @@
-import { FaUser } from "react-icons/fa"
-import { Link } from "react-router-dom"
-import CartButton from "../Buttons/CartButton"
+import { FaUser } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import CartButton from "./button/CartButton";
+
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
                 <div className="d-flex gap-2">
                     <Link className="btn btn-dark mr-4 d-flex align-items-center gap-1" to="/sign-up"><FaUser /> Sign up</Link>
                     <Link className="btn btn-light" to="/sign-in">Sign in</Link>
-                    <Link to="/cart"><CartButton /></Link>
+                    <Link to="/cart"><CartButton/></Link>
                 </div>
             </nav>
         </div>

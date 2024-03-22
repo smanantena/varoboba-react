@@ -7,6 +7,8 @@ import Home from './pages/visitors/Home'
 import Login from './components/common/Login'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Dashboard from './components/Admin/Dashboard'
+import ListClient from './components/Admin/ListClient'
+import ProduitClient from './components/Admin/ProduitClient'
 
 function App() {
   const [ products, setProducts ] = useState([])
@@ -21,6 +23,8 @@ function App() {
         <Route path="/sign-up" element={<Signup />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<Dashboard />} />
+        <Route path="/ListClient" element={<ListClient />} />
+        <Route path="/ProduitClient" element={<ProduitClient/>} />
       </Routes>
     </BrowserRouter>
   )
