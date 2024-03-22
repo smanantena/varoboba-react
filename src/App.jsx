@@ -40,14 +40,19 @@ function App() {
       <Routes>
         <Route path="/" element={<Home products={products} cart={cart} setCart={setCart} setProducts={setProducts} />} />
         <Route path="/sign-in" element={<Login />} />
+<<<<<<< HEAD
        {/* <Route path="/sign-up" element={<Signup />} /> */}
+=======
+        <Route path="/sign-up" element={<Signup/>} />
+>>>>>>> 3a06fc28e0163aed92c0d513db618de415263024
         <Route path="*" element={<NotFound />} />
+       
         <Route path="/ListClient" element={<ListClient />} />
         <Route path="/ProduitClient" element={<ProduitClient />} />
         <Route path="/client" element={<Client />} />
         <Route path="/Postuler" element={<Postuler />} />
         <Route path="/ProduitClient" element={<ProduitClient />} />
-        <Route path="/admin" element={<Admin/>} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   );
