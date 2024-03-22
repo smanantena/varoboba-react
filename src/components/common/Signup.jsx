@@ -27,7 +27,7 @@ const Signup = () => {
         userField
       );
       // console.log(responce);
-      navigate("/sign-up");
+      navigate("/");
     } catch (err) {
       console.log("something Wrong");
     }
@@ -58,7 +58,7 @@ const Signup = () => {
                     className="form-control"
                     id="prenom"
                     required=""
-                    onChange={(e) => changeUserFieldHandler(e)}
+                  
                   />
                 </div>
               </div>

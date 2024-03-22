@@ -39,8 +39,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home products={products} />} />
         <Route path="/sign-in" element={<Login />} />
-        {/* <Route path="/sign-up" element={<Signup/>} /> */}
+        <Route path="/sign-up" element={<Signup/>} />
         <Route path="*" element={<NotFound />} />
+       
         <Route path="/ListClient" element={<ListClient />} />
         <Route path="/ProduitClient" element={<ProduitClient />} />
         <Route path="/client" element={<Client />} />
