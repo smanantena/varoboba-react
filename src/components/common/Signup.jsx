@@ -106,7 +106,7 @@ const Signup = () => {
             <hr className="mb-4" />
 
             <button className="btn btn-primary btn-lg btn-block" type="submit">
-              S'enregistrer
+              s'enregistrer
             </button>
           </form>
         </div>
