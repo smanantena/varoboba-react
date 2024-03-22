@@ -1,5 +1,4 @@
-import React from 'react'
-import Header from './Header';
+import Header from "./Header";
 
 const Signup = () => {
   return (
@@ -12,30 +11,30 @@ const Signup = () => {
           <form action="" className="needs-validation">
             <div className="row">
               <div className="col-md-6 mb-3">
-                <label for="firstName">Nom </label>
+                <label htmlFor="name">Nom </label>
                 <input
-                  type="text"
-                  className="form-control"
+                 type='text'
+                className="form-control"
                   id="name"
                   name="name"
-                  placeholder=""
+                  
                   required=""
                 />
               </div>
               <div className="col-md-6 mb-3">
-                <label for="lastName">Prenom</label>
+                <label htmlFor="lastName">Prenom</label>
                 <input
                   type="text"
                   className="form-control"
                   id="prenom"
-                  placeholder=""
+                  
                   required=""
                 />
               </div>
             </div>
 
             <div className="mb-3">
-              <label for="email">
+              <label htmlFor="email">
                 E-mail <span className="text-muted"> (facultatif) </span>
               </label>
               <input
@@ -50,7 +49,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-3">
-              <label for="address">Adresse </label>
+              <label htmlFor="address">Adresse </label>
               <input
                 type="text"
                 className="form-control"
@@ -64,7 +63,7 @@ const Signup = () => {
             </div>
 
             <div className="mb-3">
-              <label for="address2">
+              <label htmlFor="address2">
                 Mot de passe <span className="text-muted"> </span>
               </label>
               <input
@@ -77,7 +76,7 @@ const Signup = () => {
 
             <div className="row">
               <div className="col-md-5 mb-3">
-                <label for="country">Pays </label>
+                <label htmlFor="country">Pays </label>
                 <select
                   className="custom-select d-block w-100"
                   id="country"
@@ -90,7 +89,7 @@ const Signup = () => {
                 </div>
               </div>
               <div className="col-md-4 mb-3">
-                <label for="state">Sexe </label>
+                <label htmlFor="state">Sexe </label>
                 <select
                   className="custom-select d-block w-100"
                   id="state"
@@ -107,7 +106,7 @@ const Signup = () => {
             <hr className="mb-4" />
 
             <button className="btn btn-primary btn-lg btn-block" type="submit">
-              s'enregistrer
+              S'enregistrer
             </button>
           </form>
         </div>
