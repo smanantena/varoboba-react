@@ -10,7 +10,7 @@ function ProduitClient() {
     }, []);
     const fetchData = async () => {
       try {
-        const result = await axios("http://localhost:8000/api/users");
+        const result = await axios("http://localhost:8000/api/produits");
         console.log(result.data.results);
         setProdData(result.data.results);
       } catch (error) {
