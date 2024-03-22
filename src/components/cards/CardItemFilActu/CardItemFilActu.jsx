@@ -26,13 +26,13 @@ const CardItemFilActu = ({ product }) => {
 
         <div className="card-item-mini">
             <div className="card-item-owner-container">
-                <img src={'http://localhost:8000/storage/img/photos/profiles/' + user['image']} alt="" />
+                <img loading="lazy" src={'http://localhost:8000/storage/img/photos/profiles/' + user['image']} alt="" />
                 <p>{user['name']}</p>
             </div>
             <div className="card-item-mini-image" data-mdb-ripple-init data-mdb-ripple-color="light">
                 {
                     (product['image_produit'].includes('.jpg')) ?
-                    <img src={'http://localhost:8000/storage/img/photos/produits/' + product['image_produit']} className="img-fluid" />
+                    <img loading="lazy" src={'http://localhost:8000/storage/img/photos/produits/' + product['image_produit']} className="img-fluid" />
                     :
                     <img src={'https://placehold.co/600x400/png'} className="img-fluid" />
                 }
