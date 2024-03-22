@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../../components/common/Header'
 import CardItemFilActu from '../../components/cards/CardItemFilActu/CardItemFilActu'
 import './Home.css'
+import Carousel from '../../components/Section/Carousel'
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
                         <CardItemFilActu/>
                         <CardItemFilActu/>
                         <CardItemFilActu/>
+                      
                     </div>
                 </div>
             </section>
