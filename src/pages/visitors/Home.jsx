@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from '../../components/common/Header'
 import CardItemFilActu from '../../components/cards/CardItemFilActu/CardItemFilActu'
 import './Home.css'
-import Carousel from '../../components/Section/Carousel'
+import axios from 'axios'
 
-const Home = () => {
+const Home = ({ products }) => {
+    
+
     return (
         <main>
             <Header />
@@ -12,17 +14,11 @@ const Home = () => {
                 <div className="container">
                     <h2>Publications de ventes</h2>
                     <div className="cards-container">
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                        <CardItemFilActu/>
-                      
+                        {
+                            products.map(
+                                product => <CardItemFilActu key={product.id} product={product} />
+                            )
+                        }
                     </div>
                 </div>
             </section>
