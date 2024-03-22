@@ -8,6 +8,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Dashboard from './components/Admin/Dashboard'
 import ListClient from './components/Admin/ListClient'
 import ProduitClient from './components/Admin/ProduitClient'
+import Client from './components/Client/Client'
+import Postuler from './components/Client/Postuler'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Home from './pages/visitors/Home'
@@ -40,6 +42,9 @@ function App() {
         <Route path="*" element={<NotFound />} />
         <Route path="/admin" element={<Dashboard />} />
         <Route path="/ListClient" element={<ListClient />} />
+        <Route path="/ProduitClient" element={<ProduitClient/>} />
+        <Route path="/client" element={<Client/>} />
+        <Route path="/Postuler" element={<Postuler/>} />
         <Route path="/ProduitClient" element={<ProduitClient />} />
       </Routes>
     </BrowserRouter>
