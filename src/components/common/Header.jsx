@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container">
         <nav className="navbar navbar-light py-3">
           <Link className="navbar-brand" style={{ fontWeight: "700" }} to="/">
-            Kalento
+            Varoboba
           </Link>
           <div className="d-flex gap-2">
             <Link
